@@ -1,0 +1,87 @@
+{
+  "name": "mo-cosmos",
+  "version": "0.1.0",
+  "description": "Simple SpaceX API client written in React",
+  "keywords": [
+    "spacex-api",
+    "typescript",
+    "styled-components",
+    "react"
+  ],
+  "repository": "https://github.com/ireshka/github-profile-viewer.git",
+  "bugs": "https://github.com/ireshka/mo-cosmos/issues",
+  "author": {
+    "name": "Małgorzata Olborska",
+    "email": "reshcode@gmail.com",
+    "url": "https://github.com/ireshka"
+  },
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^13.1.9",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.3.0",
+    "@types/react": "^17.0.5",
+    "@types/react-dom": "^17.0.5",
+    "axios": "^0.21.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "styled-components": "^5.3.0",
+    "typescript": "^4.2.4",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "build": "react-scripts build",
+    "check:eslint:deprecated": "eslint-find-rules --deprecated -no-error .eslintrc.js",
+    "check:eslint:unused": "eslint-find-rules --unused -no-error .eslintrc.js",
+    "eslint-check": "eslint src/**/*.{js,jsx,ts,tsx}",
+    "eslint-fix": "eslint src/**/*.{jsx,jsx,ts,tsx} --fix",
+    "postinstall": "husky install",
+    "precommit": "lint-staged",
+    "prettier": "prettier --write .",
+    "start": "react-scripts start",
+    "test": "react-scripts test"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@types/styled-components": "^5.1.9",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-find-rules": "^3.6.1",
+    "eslint-plugin-better-styled-components": "^1.1.2",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-jest-dom": "^3.9.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-testing-library": "^4.4.0",
+    "eslint-plugin-unicorn": "^32.0.1",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.0"
+  }
+}
