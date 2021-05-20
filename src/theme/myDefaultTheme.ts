@@ -62,7 +62,7 @@ const myDefaultTheme: DefaultTheme = {
   dimension: {
     layout: {
       container: {
-        maxWidth: '1110px',
+        maxWidth: '1126px',
       },
     },
     decoration: {
@@ -71,6 +71,11 @@ const myDefaultTheme: DefaultTheme = {
     modal: {
       maxWidth: '540px',
       maxHeight: '360px',
+    },
+  },
+  media: {
+    width: {
+      extraLarge: '@media (min-width: 1140px)',
     },
   },
 };

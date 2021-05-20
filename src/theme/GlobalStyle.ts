@@ -1,6 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
+import normalize from 'styled-normalize';
 
 export const GlobalStyle = createGlobalStyle`
+  ${normalize};
+
   html {
     box-sizing: border-box;
     font-size: 100%;
@@ -15,5 +18,10 @@ export const GlobalStyle = createGlobalStyle`
     font-size: ${({ theme }) => theme.typography.fontSize.medium};
     margin: 0;
     padding: 0;
+  }
+
+  p, div {
+    padding: 0;
+    margin: 0;
   }
 `;
