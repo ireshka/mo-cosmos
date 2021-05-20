@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
 export const Container = styled('div')`
+  align-items: flex-end;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  min-height: ${({ theme }) => theme.dimension.layout.footer.minHeight};
   padding: 1rem 0;
 
   & > * {
