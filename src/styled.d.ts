@@ -74,5 +74,10 @@ declare module 'styled-components' {
         maxHeight: string;
       };
     };
+    media: {
+      width: {
+        extraLarge: string;
+      };
+    };
   }
 }
