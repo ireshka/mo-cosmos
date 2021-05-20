@@ -64,10 +64,22 @@ const myDefaultTheme: DefaultTheme = {
       container: {
         maxWidth: '1126px',
       },
+      cardsGrid: {
+        maxWidth: '350px',
+        columnGap: '30px',
+        rowGap: '32px',
+      },
+      footer: {
+        minHeight: '84px',
+      },
+      header: {
+        minHeight: '84px',
+      },
     },
     decoration: {
       ringSize: '346px',
     },
+
     modal: {
       maxWidth: '540px',
       maxHeight: '360px',

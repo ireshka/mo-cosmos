@@ -16,6 +16,7 @@ export const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.colors.white};
     font-family: "Inter", Roboto, sans-serif;
     font-size: ${({ theme }) => theme.typography.fontSize.medium};
+    font-weight: ${({ theme }) => theme.typography.fontWeight.regular};
     margin: 0;
     padding: 0;
   }

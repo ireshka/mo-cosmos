@@ -65,6 +65,17 @@ declare module 'styled-components' {
         container: {
           maxWidth: string;
         };
+        cardsGrid: {
+          maxWidth: string;
+          columnGap: string;
+          rowGap: string;
+        };
+        footer: {
+          minHeight: string;
+        };
+        header: {
+          minHeight: string;
+        };
       };
       decoration: {
         ringSize: string;
