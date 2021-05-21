@@ -8,7 +8,6 @@ import { getLeftSmokeAnimationOptions, getRightSmokeAnimationOptions } from './S
 import * as S from './SmokeContainer.styles';
 
 export const SmokeContainer: VFC = () => {
-  console.log(getLeftSmokeAnimationOptions());
   const [{ isRocketAnimationInProgress }] = useAppStore();
 
   return (

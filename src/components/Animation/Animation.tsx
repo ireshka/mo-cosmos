@@ -7,16 +7,19 @@ import { Illustration } from './Illustration/Illustration';
 import { LaunchButton } from './LaunchButton/LaunchButton';
 
 export const Animation: VFC = () => {
-  const [{ isRocketAnimationInProgress }, { setAnimationProgress }] = useAppStore();
+  const [{ isRocketAnimationEnded }, { setAnimationProgress, setAnimationEnd }] = useAppStore();
 
-  const handleClick = () => setAnimationProgress(true);
+  const handleClick = () => {
+    setAnimationProgress(true);
+    setAnimationEnd(false);
+  };
 
   return (
     <S.Container>
       <Illustration />
       <LaunchButton
         text={texts.button.launch}
-        disabled={isRocketAnimationInProgress}
+        disabled={!isRocketAnimationEnded}
         onClick={handleClick}
       />
     </S.Container>

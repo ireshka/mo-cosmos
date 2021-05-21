@@ -9,6 +9,7 @@ defaults.mutator = (currentState, producer) => produce(currentState, producer);
 
 const initialState: State = {
   isRocketAnimationInProgress: false,
+  isRocketAnimationEnded: true,
 };
 
 export const actions = {
@@ -17,6 +18,13 @@ export const actions = {
     ({ setState }) => {
       setState((draft: Draft<State>) => {
         draft.isRocketAnimationInProgress = value;
+      });
+    },
+  setAnimationEnd:
+    (value: boolean): Action<State> =>
+    ({ setState }) => {
+      setState((draft: Draft<State>) => {
+        draft.isRocketAnimationEnded = value;
       });
     },
 };
