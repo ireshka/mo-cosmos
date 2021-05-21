@@ -47,6 +47,7 @@ export const DetailsOverlay = styled(motion.div).attrs(overlayAnimationOptions)`
   ${CSSHelper.absoluteOverlay};
   ${CSSHelper.flexCenter}
   background: ${({ theme }) => theme.colors.gradients.card.full};
+  border-radius: 16px;
 `;
 
 export const OverlayText = styled(motion.span).attrs(overlayTextAnimationOptions)`
