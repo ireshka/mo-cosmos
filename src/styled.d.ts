@@ -86,6 +86,11 @@ declare module 'styled-components' {
         height: string;
         width: string;
       };
+      animation: {
+        planet: {
+          maxWidth: string;
+        };
+      };
     };
     media: {
       width: {

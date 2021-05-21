@@ -85,6 +85,11 @@ const myDefaultTheme: DefaultTheme = {
       height: '360px',
       width: '90%;',
     },
+    animation: {
+      planet: {
+        maxWidth: '375px',
+      },
+    },
   },
   media: {
     width: {

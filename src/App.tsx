@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import { ThemeProvider } from 'styled-components';
 
+import { Animation } from './components/Animation/Animation';
 import { CardsGrid } from './components/CardsGrid/CardsGrid';
 import { Content } from './components/Content/Content';
 import { Footer } from './components/Footer/Footer';
@@ -16,7 +17,7 @@ export const App: FC = () => (
       <Header />
       <Content>
         <CardsGrid />
-        <div>Rocket</div>
+        <Animation />
       </Content>
       <Footer />
     </Layout>
