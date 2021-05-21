@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
 export const Container = styled('div')`
@@ -14,6 +15,8 @@ type ImageProps = {
   width: string;
 };
 
-export const Image = styled('img')<ImageProps>`
+export const Image = styled(motion.img)<ImageProps>`
+  position: relative;
+  transform: translate(0, 0);
   width: ${({ width }) => width};
 `;
