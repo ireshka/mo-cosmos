@@ -23,7 +23,7 @@ const myDefaultTheme: DefaultTheme = {
     },
     gradients: {
       card: {
-        partial: 'linear-gradient(360deg, #2B224A 0%, #2b224a 100%)',
+        partial: 'linear-gradient(360deg, #2B224A 0%, rgba(43, 34, 74, 0) 100%)',
         full: 'linear-gradient(0deg, rgba(43, 34, 74, 0.92) 7.69%, rgba(70, 58, 113, 0.92) 100%)',
       },
       modal: {
@@ -35,9 +35,9 @@ const myDefaultTheme: DefaultTheme = {
     },
   },
   radius: {
-    extraSmall: '0.25rem',
-    small: '0.5rem',
-    medium: '1rem',
+    extraSmall: '4px',
+    small: '8px',
+    medium: '16px',
     round: '50%',
   },
   typography: {
@@ -65,7 +65,7 @@ const myDefaultTheme: DefaultTheme = {
         maxWidth: '1126px',
       },
       cardsGrid: {
-        maxWidth: '350px',
+        maxWidth: '21.875rem',
         columnGap: '30px',
         rowGap: '32px',
       },
@@ -89,6 +89,9 @@ const myDefaultTheme: DefaultTheme = {
     width: {
       extraLarge: '@media (min-width: 1140px)',
     },
+  },
+  timing: {
+    short: 0.2,
   },
 };
 

@@ -90,5 +90,8 @@ declare module 'styled-components' {
         extraLarge: string;
       };
     };
+    timing: {
+      short: number;
+    };
   }
 }
