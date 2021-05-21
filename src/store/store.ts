@@ -2,7 +2,7 @@
 import produce, { Draft } from 'immer';
 import { Action, createHook, createStore, defaults } from 'react-sweet-state';
 
-import { Actions, State } from './store.types';
+import { State } from './store.types';
 
 defaults.devtools = true;
 defaults.mutator = (currentState, producer) => produce(currentState, producer);
@@ -21,7 +21,7 @@ export const actions = {
     },
 };
 
-const AppStore = createStore<State, Actions>({
+const AppStore = createStore<State, typeof actions>({
   initialState,
   actions,
   name: 'app-store',

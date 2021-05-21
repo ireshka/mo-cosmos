@@ -7,6 +7,7 @@ const myDefaultTheme: DefaultTheme = {
     button: {
       basic: '#7860D7',
       active: '#05C9B7',
+      disabled: '#544E69',
     },
     footer: {
       text: '#8D7FBC',

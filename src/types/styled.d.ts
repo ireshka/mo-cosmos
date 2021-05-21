@@ -8,6 +8,7 @@ declare module 'styled-components' {
       button: {
         basic: string;
         active: string;
+        disabled: string;
       };
       footer: {
         text: string;

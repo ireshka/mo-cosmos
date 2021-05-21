@@ -11,7 +11,6 @@ export const Card: VFC<CardProps> = ({ data, setModal, setContent }) => {
 
   const handleHover = (): void => {
     setHovered((previousState) => !previousState);
-    console.log('Zmiana hover');
   };
 
   const handleClick = () => {
