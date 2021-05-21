@@ -5,9 +5,8 @@ import { texts } from '../../data/texts';
 import * as S from './Card.styles';
 import { CardProps } from './Card.types';
 
-export const Card: VFC<CardProps> = ({ data }) => {
+export const Card: VFC<CardProps> = ({ data, setModal, setContent }) => {
   const [isHovered, setHovered] = useState(false);
-
   const { title, image } = data;
 
   const handleHover = (hoverState: boolean): void => {
@@ -18,6 +17,11 @@ export const Card: VFC<CardProps> = ({ data }) => {
     }
   };
 
+  const handleClick = () => {
+    setModal(true);
+    setContent(data);
+  };
+
   return (
     <AnimatePresence>
       <S.Container
@@ -25,6 +29,7 @@ export const Card: VFC<CardProps> = ({ data }) => {
         onMouseLeave={() => handleHover(false)}
         onFocus={() => handleHover(true)}
         onBlur={() => handleHover(false)}
+        onClick={() => handleClick()}
         tabIndex={0}
       >
         <S.Image alt="" src={image} $hoverState={isHovered} />
