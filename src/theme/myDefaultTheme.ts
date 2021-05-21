@@ -12,6 +12,7 @@ const myDefaultTheme: DefaultTheme = {
       text: '#8D7FBC',
     },
     modal: {
+      background: '#2B224A',
       closeIcon: '#C3B8E8',
       title: '#FFFFFF',
       columnHeader: '#A094C6',
@@ -79,15 +80,15 @@ const myDefaultTheme: DefaultTheme = {
     decoration: {
       ringSize: '346px',
     },
-
     modal: {
       maxWidth: '540px',
-      maxHeight: '360px',
+      height: '360px',
+      width: '90%;',
     },
   },
   media: {
     width: {
-      extraLarge: '@media (min-width: 1140px)',
+      extraLarge: '@media (min-width: 600px)',
     },
   },
   timing: {

@@ -13,6 +13,7 @@ declare module 'styled-components' {
         text: string;
       };
       modal: {
+        background: string;
         closeIcon: string;
         title: string;
         columnHeader: string;
@@ -82,7 +83,8 @@ declare module 'styled-components' {
       };
       modal: {
         maxWidth: string;
-        maxHeight: string;
+        height: string;
+        width: string;
       };
     };
     media: {

@@ -2,10 +2,10 @@ import { ReactElement, ReactNode } from 'react';
 
 import * as S from './Layout.styles';
 
-type ILayoutProps = {
+type LayoutProps = {
   children: ReactNode;
 };
 
-export const Layout = ({ children }: ILayoutProps): ReactElement | null => (
+export const Layout = ({ children }: LayoutProps): ReactElement | null => (
   <S.Container>{children}</S.Container>
 );

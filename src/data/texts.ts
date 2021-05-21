@@ -9,4 +9,7 @@ export const texts = {
   card: {
     overlayText: 'Details',
   },
+  modal: {
+    noContent: 'No content',
+  },
 };
