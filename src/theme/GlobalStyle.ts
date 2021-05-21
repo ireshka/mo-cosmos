@@ -16,11 +16,12 @@ export const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.colors.white};
     font-family: "Inter", Roboto, sans-serif;
     font-size: ${({ theme }) => theme.typography.fontSize.medium};
+    font-weight: ${({ theme }) => theme.typography.fontWeight.regular};
     margin: 0;
     padding: 0;
   }
 
-  p, div {
+  p, div, h1, h2, h3 {
     padding: 0;
     margin: 0;
   }
