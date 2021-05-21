@@ -3,6 +3,8 @@ import { ReactElement } from 'react';
 import { RenderModalBackdropProps } from 'react-overlays/Modal';
 
 import { Card } from '../../data/cards.types';
+import { texts } from '../../data/texts';
+import { CloseIcon } from './CloseButton/CloseButton';
 import * as S from './Modal.styles';
 
 type ModalProps = {
@@ -16,7 +18,10 @@ export const Modal = ({ show, data, onHide }: ModalProps): ReactElement | null =
 
   return (
     <S.Container show={show} onHide={onHide} renderBackdrop={renderBackdrop} restoreFocus={false}>
-      {data ? <div>{data.title}</div> : <div>No content, sorry</div>}
+      <S.Header>
+        <S.Title>{data ? data.title : texts.modal.noContent}</S.Title>
+        <CloseIcon closeHandler={onHide} />
+      </S.Header>
     </S.Container>
   );
 };
