@@ -23,7 +23,6 @@ const endpoints = {
 const getErrorObject = async (error: any): Promise<ErrorRequestResponse> => {
   if (axios.isAxiosError(error)) {
     if (error.response) {
-      console.log(error.response);
       const { status }: { status: number } = error.response;
       return { errorStatus: status };
     }

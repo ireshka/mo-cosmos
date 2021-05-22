@@ -10,25 +10,25 @@ export const cardsData: Card[] = [
   {
     id: uuid(),
     image: CapsuleImage,
-    route: 'capsules',
     title: 'capsules',
+    headers: ['type', 'status'],
   },
   {
     id: uuid(),
     image: CrewImage,
-    route: 'crew',
     title: 'crew',
+    headers: ['name', 'agency'],
   },
   {
     id: uuid(),
     image: RocketImage,
-    route: 'rockets',
     title: 'rockets',
+    headers: ['name', 'active'],
   },
   {
     id: uuid(),
     image: StarlinkImage,
-    route: 'starlink',
     title: 'starlink',
+    headers: ['OBJECT_NAME', 'DECAYED'],
   },
 ];

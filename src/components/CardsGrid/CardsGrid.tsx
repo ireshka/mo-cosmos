@@ -8,7 +8,7 @@ import * as S from './CardsGrid.styles';
 
 export const CardsGrid: FC = () => {
   const [isModalShow, setModalShow] = useState(false);
-  const [modelContent, setModalContent] = useState<CardType | null>(null);
+  const [modalContent, setModalContent] = useState<CardType | null>(null);
 
   const hideModal = () => setModalShow(false);
 
@@ -19,7 +19,7 @@ export const CardsGrid: FC = () => {
           <Card key={data.id} data={data} setModal={setModalShow} setContent={setModalContent} />
         ))}
       </S.Wrapper>
-      <Modal show={isModalShow} data={modelContent} onHide={hideModal} />
+      <Modal show={isModalShow} data={modalContent} onHide={hideModal} />
     </>
   );
 };

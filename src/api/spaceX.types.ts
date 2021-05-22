@@ -157,7 +157,7 @@ export type SpaceXRockets = {
   id: string;
 };
 
-type SpaceTrack = {
+export type SpaceTrack = {
   CCSDS_OMM_VERS: string;
   COMMENT: string;
   CREATION_DATE: Date;
@@ -205,10 +205,10 @@ export type SpaceXStarlink = {
   spaceTrack: SpaceTrack;
   version: string;
   launch: string;
-  longitude?: number;
-  latitude?: number;
-  height_km?: number;
-  velocity_kms?: number;
+  longitude: number | null;
+  latitude: number | null;
+  height_km: number | null;
+  velocity_kms?: number | null;
   id: string;
 };
 

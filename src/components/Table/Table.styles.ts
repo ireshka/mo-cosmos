@@ -1,0 +1,57 @@
+import styled from 'styled-components';
+
+export const Table = styled('table')`
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+`;
+
+export const Header = styled('thead')`
+  border: none;
+  border-radius: ${({ theme }) => theme.radius.extraSmall};
+`;
+
+export const HeaderRow = styled('tr')`
+  background-color: ${({ theme }) => theme.colors.modal.tableHeaderBackground};
+  border-radius: ${({ theme }) => theme.radius.extraSmall};
+  display: flex;
+  width: 100%;
+  /* grid-template-columns: 1fr 1fr; */
+`;
+
+export const HeaderCell = styled('td')`
+  border-radius: ${({ theme }) => theme.radius.extraSmall};
+  flex-basis: 100%;
+  font-size: ${({ theme }) => theme.typography.fontSize.small};
+  font-weight: ${({ theme }) => theme.typography.fontWeight.semiBold};
+  line-height: ${({ theme }) => theme.typography.lineHeight.small};
+  padding: 10px 16px;
+  text-transform: capitalize;
+  transition: background-color 0.5s;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.modal.tableHeaderHoverBackground};
+  }
+`;
+
+export const TableBody = styled('tbody')`
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+  overflow: auto;
+`;
+
+export const BodyRow = styled('tr')`
+  display: flex;
+`;
+
+export const BodyCell = styled('td')`
+  color: ${({ theme }) => theme.colors.modal.tableElements};
+  flex-basis: 100%;
+  font-size: ${({ theme }) => theme.typography.fontSize.small};
+  font-weight: ${({ theme }) => theme.typography.fontWeight.regular};
+  line-height: ${({ theme }) => theme.typography.lineHeight.small};
+  padding: 14px 16px;
+`;

@@ -2,6 +2,7 @@
 import produce, { Draft } from 'immer';
 import { Action, createHook, createStore, defaults } from 'react-sweet-state';
 
+import { CardsID } from '../data/cards.types';
 import { State } from './store.types';
 
 defaults.devtools = true;
@@ -10,6 +11,7 @@ defaults.mutator = (currentState, producer) => produce(currentState, producer);
 const initialState: State = {
   isRocketAnimationInProgress: false,
   isRocketAnimationEnded: true,
+  dataTypeOnModal: null,
 };
 
 export const actions = {
@@ -25,6 +27,13 @@ export const actions = {
     ({ setState }) => {
       setState((draft: Draft<State>) => {
         draft.isRocketAnimationEnded = value;
+      });
+    },
+  setDataTypeOnModal:
+    (value: CardsID | null): Action<State> =>
+    ({ setState }) => {
+      setState((draft: Draft<State>) => {
+        draft.dataTypeOnModal = value;
       });
     },
 };

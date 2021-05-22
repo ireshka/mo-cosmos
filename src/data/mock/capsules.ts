@@ -1,4 +1,7 @@
-export const capsulesData = [
+import { SpaceXCapsules } from '../../api/spaceX.types';
+import { DisplayedSpaceXCapsules } from '../cards.types';
+
+export const capsulesData: SpaceXCapsules[] = [
   {
     reuse_count: 0,
     water_landings: 1,
@@ -230,6 +233,114 @@ export const capsulesData = [
     last_update: 'Splashed down off the coast of Florida on 14 Jan 2021',
     launches: ['5eb87d4effd86e000604b391'],
     serial: 'C208',
+    status: 'active',
+    type: 'Dragon 2.0',
+    id: '5fbb0f8fec55b34eb9f35c14',
+  },
+];
+
+export const filteredCapsulesData: DisplayedSpaceXCapsules[] = [
+  {
+    status: 'retired',
+    type: 'Dragon 1.0',
+    id: '5e9e2c5bf35918ed873b2664',
+  },
+  {
+    status: 'retired',
+    type: 'Dragon 1.0',
+    id: '5e9e2c5bf3591882af3b2665',
+  },
+  {
+    status: 'unknown',
+    type: 'Dragon 1.0',
+    id: '5e9e2c5bf3591835983b2666',
+  },
+  {
+    status: 'unknown',
+    type: 'Dragon 1.0',
+    id: '5e9e2c5bf359189ef23b2667',
+  },
+  {
+    status: 'unknown',
+    type: 'Dragon 1.1',
+    id: '5e9e2c5bf3591859a63b2668',
+  },
+  {
+    status: 'active',
+    type: 'Dragon 1.1',
+    id: '5e9e2c5bf3591880643b2669',
+  },
+  {
+    status: 'unknown',
+    type: 'Dragon 1.1',
+    id: '5e9e2c5bf35918165f3b266a',
+  },
+  {
+    status: 'active',
+    type: 'Dragon 1.1',
+    id: '5e9e2c5cf359188bfb3b266b',
+  },
+  {
+    status: 'destroyed',
+    type: 'Dragon 1.1',
+    id: '5e9e2c5cf35918407d3b266c',
+  },
+  {
+    status: 'active',
+    type: 'Dragon 1.1',
+    id: '5e9e2c5cf3591885d43b266d',
+  },
+  {
+    status: 'active',
+    type: 'Dragon 1.1',
+    id: '5e9e2c5cf359183bb73b266e',
+  },
+  {
+    status: 'active',
+    type: 'Dragon 1.1',
+    id: '5e9e2c5cf359185d753b266f',
+  },
+  {
+    status: 'active',
+    type: 'Dragon 1.1',
+    id: '5e9e2c5cf3591869b63b2670',
+  },
+  {
+    status: 'retired',
+    type: 'Dragon 2.0',
+    id: '5e9e2c5df35918b1063b2671',
+  },
+  {
+    status: 'active',
+    type: 'Dragon 2.0',
+    id: '5e9e2c5df359184c9a3b2672',
+  },
+  {
+    status: 'retired',
+    type: 'Dragon 2.0',
+    id: '5e9e2c5df3591849f93b2673',
+  },
+  {
+    status: 'active',
+    type: 'Dragon 2.0',
+    id: '5e9e2c5df359184b793b2674',
+  },
+  {
+    status: 'destroyed',
+    type: 'Dragon 2.0',
+    id: '5e9e2c5df359185f973b2675',
+  },
+  {
+    status: 'active',
+    type: 'Dragon 2.0',
+    id: '5e9e2c5df359188aba3b2676',
+  },
+  {
+    status: 'active',
+    type: 'Dragon 2.0',
+    id: '5f6f99fddcfdf403df379709',
+  },
+  {
     status: 'active',
     type: 'Dragon 2.0',
     id: '5fbb0f8fec55b34eb9f35c14',
