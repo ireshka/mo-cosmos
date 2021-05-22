@@ -20,7 +20,7 @@ export const Card: VFC<CardProps> = ({ data, setModal, setContent }) => {
 
   return (
     <AnimatePresence exitBeforeEnter>
-      <S.Container
+      <S.Wrapper
         onMouseEnter={() => handleHover(true)}
         onMouseLeave={() => handleHover(false)}
         onFocus={() => handleHover(true)}
@@ -42,7 +42,7 @@ export const Card: VFC<CardProps> = ({ data, setModal, setContent }) => {
             {texts.card.overlayText}
           </S.OverlayText>
         </S.DetailsOverlay>
-      </S.Container>
+      </S.Wrapper>
     </AnimatePresence>
   );
 };

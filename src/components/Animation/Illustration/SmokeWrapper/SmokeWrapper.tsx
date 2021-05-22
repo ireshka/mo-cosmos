@@ -5,13 +5,13 @@ import LeftSmoke from '../../../../assets/rocket/smoke-left.svg';
 import RightSmoke from '../../../../assets/rocket/smoke-right.svg';
 import { useAppStore } from '../../../../store/store';
 import { getLeftSmokeAnimationOptions, getRightSmokeAnimationOptions } from './Smoke.animation';
-import * as S from './SmokeContainer.styles';
+import * as S from './SmokeWrapper.styles';
 
-export const SmokeContainer: VFC = () => {
+export const SmokeWrapper: VFC = () => {
   const [{ isRocketAnimationInProgress }] = useAppStore();
 
   return (
-    <S.Container>
+    <S.Wrapper>
       <S.Image
         src={LeftSmoke}
         alt=""
@@ -26,6 +26,6 @@ export const SmokeContainer: VFC = () => {
         {...getRightSmokeAnimationOptions()}
         animate={isRocketAnimationInProgress ? 'hidden' : 'visible'}
       />
-    </S.Container>
+    </S.Wrapper>
   );
 };

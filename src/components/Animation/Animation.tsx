@@ -15,13 +15,13 @@ export const Animation: VFC = () => {
   };
 
   return (
-    <S.Container>
+    <S.Wrapper>
       <Illustration />
       <LaunchButton
         text={texts.button.launch}
         disabled={!isRocketAnimationEnded}
         onClick={handleClick}
       />
-    </S.Container>
+    </S.Wrapper>
   );
 };

@@ -7,5 +7,5 @@ type IContentProps = {
 };
 
 export const Content = ({ children }: IContentProps): ReactElement | null => (
-  <S.Container>{children}</S.Container>
+  <S.Wrapper>{children}</S.Wrapper>
 );

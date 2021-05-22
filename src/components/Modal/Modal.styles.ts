@@ -1,7 +1,7 @@
 import { Modal as ReactModal } from 'react-overlays';
 import styled from 'styled-components';
 
-export const Container = styled(ReactModal)`
+export const Wrapper = styled(ReactModal)`
   background-color: ${({ theme }) => theme.colors.modal.background};
   border-radius: ${({ theme }) => theme.radius.small};
   height: ${({ theme }) => theme.dimension.modal.height};

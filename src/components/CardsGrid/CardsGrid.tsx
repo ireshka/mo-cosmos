@@ -14,11 +14,11 @@ export const CardsGrid: FC = () => {
 
   return (
     <>
-      <S.Container>
+      <S.Wrapper>
         {cardsData.map((data) => (
           <Card key={data.id} data={data} setModal={setModalShow} setContent={setModalContent} />
         ))}
-      </S.Container>
+      </S.Wrapper>
       <Modal show={isModalShow} data={modelContent} onHide={hideModal} />
     </>
   );

@@ -11,11 +11,11 @@ export const Modal = ({ show, data, onHide }: ModalProps): ReactElement | null =
   const renderBackdrop = (props: RenderModalBackdropProps) => <S.Backdrop {...props} />;
 
   return (
-    <S.Container show={show} onHide={onHide} renderBackdrop={renderBackdrop} restoreFocus={false}>
+    <S.Wrapper show={show} onHide={onHide} renderBackdrop={renderBackdrop} restoreFocus={false}>
       <S.Header>
         <S.Title>{data ? data.title : texts.modal.noContent}</S.Title>
         <CloseIcon closeHandler={onHide} />
       </S.Header>
-    </S.Container>
+    </S.Wrapper>
   );
 };

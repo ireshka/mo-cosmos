@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
-export const Container = styled('div')`
+export const Wrapper = styled('div')`
   align-items: center;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   justify-items: center;
 `;
