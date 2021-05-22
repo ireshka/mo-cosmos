@@ -5,6 +5,7 @@ import { RenderModalBackdropProps } from 'react-overlays/Modal';
 import { api } from '../../api/spaceX';
 import { texts } from '../../data/texts';
 import { useAppStore } from '../../store/store';
+import { Spinner } from '../Spinner/Spinner';
 import { Table } from '../Table/Table';
 import { CloseIcon } from './CloseButton/CloseButton';
 import { ErrorBox } from './ErrorBox/ErrorBox';
@@ -56,7 +57,7 @@ export const Modal = ({ show, onHide }: ModalProps): ReactElement | null => {
           <CloseIcon closeHandler={onHide} />
         </S.Header>
         <S.Content>
-          {isFetching && !chosenDataFromApi && <div>Loading</div>}
+          {isFetching && !chosenDataFromApi && <Spinner />}
           {!isFetching && chosenDataFromApi !== null && <Table data={chosenDataFromApi} />}
           {errorMessage && <ErrorBox text={errorMessage} />}
         </S.Content>

@@ -2,7 +2,7 @@ import { Variants } from 'framer-motion';
 
 import { AnimationOption } from '../../../../types/framer';
 
-const rocketAnimationDuration = 1.5;
+const rocketAnimationDuration = 1.3;
 export const rocketAnimationLandingDuration = rocketAnimationDuration / 2;
 
 const rocketVariants: Variants = {
@@ -10,7 +10,7 @@ const rocketVariants: Variants = {
     opacity: 1,
     y: '0%',
     transition: {
-      duration: rocketAnimationDuration / 2,
+      duration: rocketAnimationDuration / 3,
     },
   },
   initial: {
