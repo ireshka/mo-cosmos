@@ -12,23 +12,27 @@ export const cardsData: Card[] = [
     image: CapsuleImage,
     title: 'capsules',
     headers: ['type', 'status'],
+    distinctProperty: 'water_landings',
   },
   {
     id: uuid(),
     image: CrewImage,
     title: 'crew',
     headers: ['name', 'agency'],
+    distinctProperty: 'agency',
   },
   {
     id: uuid(),
     image: RocketImage,
     title: 'rockets',
     headers: ['name', 'active'],
+    distinctProperty: 'first_stage',
   },
   {
     id: uuid(),
     image: StarlinkImage,
     title: 'starlink',
-    headers: ['OBJECT_NAME', 'DECAYED'],
+    headers: ['OBJECT_NAME', 'LAUNCH_DATE'],
+    distinctProperty: 'spaceTrack',
   },
 ];

@@ -201,7 +201,7 @@ export type SpaceTrack = {
   TLE_LINE2: string;
 };
 
-export type SpaceXStarlink = {
+export type SpaceXStarlinkOriginal = {
   spaceTrack: SpaceTrack;
   version: string;
   launch: string;
@@ -212,12 +212,15 @@ export type SpaceXStarlink = {
   id: string;
 };
 
+export type SpaceXStarlink = Omit<SpaceXStarlinkOriginal, 'spaceTrack'> &
+  SpaceTrack & { spaceTrack: boolean };
+
 export type ErrorRequestResponse = {
   errorStatus: number;
 };
 
 export type SpaceXStarlinkQuery = {
-  docs: SpaceXStarlink[];
+  docs: SpaceXStarlinkOriginal[];
   hasNextPage: boolean;
   hasPrevPage: false;
   limit: number;
@@ -229,3 +232,6 @@ export type SpaceXStarlinkQuery = {
   totalDocs: number;
   totalPages: number;
 };
+
+export type SpaceXTypes = SpaceXCapsules[] | SpaceXRockets[] | SpaceXStarlink[] | SpaceXCrew[];
+export type SpaceXType = SpaceXCapsules | SpaceXRockets | SpaceXStarlink | SpaceXCrew;

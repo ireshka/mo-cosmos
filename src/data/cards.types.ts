@@ -13,7 +13,7 @@ export type CrewHeaders = keyof DisplayedSpaceXCrew;
 export type DisplayedSpaceXRockets = Pick<SpaceXRockets, 'name' | 'active' | 'id'>;
 
 export type RocketHeaders = keyof DisplayedSpaceXRockets;
-export type DisplayedSpaceXStarlink = Pick<SpaceTrack, 'GP_ID' | 'DECAYED' | 'OBJECT_NAME'>;
+export type DisplayedSpaceXStarlink = Pick<SpaceTrack, 'GP_ID' | 'LAUNCH_DATE' | 'OBJECT_NAME'>;
 
 export type StarlinkHeaders = keyof DisplayedSpaceXStarlink;
 
@@ -24,4 +24,5 @@ export type Card = {
   image: string;
   id: string;
   headers: Headers[];
+  distinctProperty: string;
 };
