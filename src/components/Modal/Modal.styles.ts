@@ -1,6 +1,8 @@
 import { Modal as ReactModal } from 'react-overlays';
 import styled from 'styled-components';
 
+import { flexCenter } from '../../theme/cssHelpers';
+
 export const Wrapper = styled(ReactModal)`
   background-color: ${({ theme }) => theme.colors.modal.background};
   border-radius: ${({ theme }) => theme.radius.medium};
@@ -37,4 +39,11 @@ export const Title = styled('h2')`
   font-weight: ${({ theme }) => theme.typography.fontWeight.bold};
   line-height: ${({ theme }) => theme.typography.lineHeight.large};
   text-transform: capitalize;
+`;
+
+export const Content = styled('div')`
+  flex-grow: 1;
+  overflow: hidden;
+  ${flexCenter};
+  position: relative;
 `;

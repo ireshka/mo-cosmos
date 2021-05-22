@@ -21,6 +21,7 @@ declare module 'styled-components' {
         tableElements: string;
         tableHeaderBackground: string;
         tableHeaderHoverBackground: string;
+        errorBoxBorder: string;
       };
       scrollbar: {
         main: string;

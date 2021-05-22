@@ -7,6 +7,7 @@ import { texts } from '../../data/texts';
 import { useAppStore } from '../../store/store';
 import { Table } from '../Table/Table';
 import { CloseIcon } from './CloseButton/CloseButton';
+import { ErrorBox } from './ErrorBox/ErrorBox';
 import * as S from './Modal.styles';
 import { ModalProps } from './Modal.types';
 
@@ -54,9 +55,11 @@ export const Modal = ({ show, onHide }: ModalProps): ReactElement | null => {
           <S.Title>{modalTitle}</S.Title>
           <CloseIcon closeHandler={onHide} />
         </S.Header>
-        {isFetching && !chosenDataFromApi && <div>Loading</div>}
-        {!isFetching && chosenDataFromApi !== null && <Table data={chosenDataFromApi} />}
-        {errorMessage && <div>{errorMessage}</div>}
+        <S.Content>
+          {isFetching && !chosenDataFromApi && <div>Loading</div>}
+          {!isFetching && chosenDataFromApi !== null && <Table data={chosenDataFromApi} />}
+          {errorMessage && <ErrorBox text={errorMessage} />}
+        </S.Content>
       </>
     </S.Wrapper>
   );

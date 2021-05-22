@@ -20,6 +20,7 @@ const myDefaultTheme: DefaultTheme = {
       tableElements: '#D2CBE9',
       tableHeaderBackground: '#342A56',
       tableHeaderHoverBackground: '#251D42',
+      errorBoxBorder: '#4F3C88',
     },
     scrollbar: {
       main: '#53477D',
