@@ -34,6 +34,7 @@ export const Table = ({ data }: TableProps) => {
           })}
         </SimpleBarReact>
       </S.TableBody>
+      <S.Overlay />
     </S.Table>
   );
 };

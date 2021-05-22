@@ -6,6 +6,7 @@ export const Table = styled('div')`
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  position: relative;
   width: 100%;
 `;
 
@@ -56,4 +57,13 @@ export const BodyCell = styled('div')`
   font-weight: ${({ theme }) => theme.typography.fontWeight.regular};
   line-height: ${({ theme }) => theme.typography.lineHeight.small};
   padding: 14px 16px;
+`;
+
+export const Overlay = styled('div')`
+  background: ${({ theme }) => theme.colors.gradients.modal.bottom};
+  bottom: 0;
+  height: 52px;
+  left: 0;
+  position: absolute;
+  right: 0;
 `;
