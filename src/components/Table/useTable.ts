@@ -3,7 +3,7 @@ import { Headers } from '../../data/cards.types';
 import { useAppStore } from '../../store/store';
 import { CompletedChosenDataFromApi } from '../../store/store.types';
 
-type Header = {
+export type Header = {
   originalHeader: Headers;
   displayedHeader: string;
 };

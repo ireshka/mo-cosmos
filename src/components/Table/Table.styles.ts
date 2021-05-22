@@ -22,21 +22,6 @@ export const HeaderRow = styled('div')`
   width: 100%;
 `;
 
-export const HeaderCell = styled('div')`
-  border-radius: ${({ theme }) => theme.radius.extraSmall};
-  flex-basis: 100%;
-  font-size: ${({ theme }) => theme.typography.fontSize.small};
-  font-weight: ${({ theme }) => theme.typography.fontWeight.semiBold};
-  line-height: ${({ theme }) => theme.typography.lineHeight.small};
-  padding: 10px 16px;
-  text-transform: capitalize;
-  transition: background-color 0.5s;
-
-  &:hover {
-    background-color: ${({ theme }) => theme.colors.modal.tableHeaderHoverBackground};
-  }
-`;
-
 export const TableBody = styled('div')`
   display: flex;
   flex: 1;
