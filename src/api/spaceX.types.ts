@@ -215,3 +215,17 @@ export type SpaceXStarlink = {
 export type ErrorRequestResponse = {
   errorStatus: number;
 };
+
+export type SpaceXStarlinkQuery = {
+  docs: SpaceXStarlink[];
+  hasNextPage: boolean;
+  hasPrevPage: false;
+  limit: number;
+  nextPage: number;
+  offset: number;
+  page: number;
+  pagingCounter: number;
+  prevPage: number;
+  totalDocs: number;
+  totalPages: number;
+};
