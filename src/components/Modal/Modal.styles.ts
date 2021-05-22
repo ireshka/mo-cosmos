@@ -3,7 +3,9 @@ import styled from 'styled-components';
 
 export const Wrapper = styled(ReactModal)`
   background-color: ${({ theme }) => theme.colors.modal.background};
-  border-radius: ${({ theme }) => theme.radius.small};
+  border-radius: ${({ theme }) => theme.radius.medium};
+  display: flex;
+  flex-direction: column;
   height: ${({ theme }) => theme.dimension.modal.height};
   left: 50%;
   max-width: ${({ theme }) => theme.dimension.modal.maxWidth};

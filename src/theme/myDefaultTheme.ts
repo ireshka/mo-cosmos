@@ -64,7 +64,7 @@ const myDefaultTheme: DefaultTheme = {
   dimension: {
     layout: {
       wrapper: {
-        maxWidth: '1126px',
+        maxWidth: '1172px',
       },
       cardsGrid: {
         maxWidth: '21.875rem',

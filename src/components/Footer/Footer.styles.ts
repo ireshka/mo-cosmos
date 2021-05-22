@@ -6,7 +6,7 @@ export const Wrapper = styled('div')`
   flex-wrap: wrap;
   justify-content: space-between;
   min-height: ${({ theme }) => theme.dimension.layout.footer.minHeight};
-  padding: 1rem 0;
+  padding: 1rem 1rem;
 
   & > * {
     margin-right: 1rem;
