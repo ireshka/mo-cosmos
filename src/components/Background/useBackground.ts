@@ -31,7 +31,7 @@ const circlePositions: CirclePosition[] = [
     width: `${circleSizeInPercentageWidthPerspective}%`,
     top: `14%`,
     bottom: 'auto',
-    id: `02`,
+    id: `03`,
   },
 ];
 
@@ -69,7 +69,7 @@ export const useBackground = (): { circlePositions: CirclePosition[]; dotData: D
       bottom: 'auto',
       left: '87.43%',
       right: 'auto',
-      id: '03',
+      id: '04',
     },
   ];
 

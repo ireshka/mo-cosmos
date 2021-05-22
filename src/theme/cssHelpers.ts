@@ -13,3 +13,11 @@ export const flexCenter = css`
   display: flex;
   justify-content: center;
 `;
+
+export const screenReadersOnly = css`
+  height: 1;
+  left: -100px;
+  position: absolute;
+  top: -100px;
+  width: 1;
+`;

@@ -6,5 +6,6 @@ import * as S from './Header.styles';
 export const Header: VFC = () => (
   <S.Wrapper>
     <S.Logo alt="Usertive" src={Logo} $width={116} />
+    <S.Header>Discover SpaceX data</S.Header>
   </S.Wrapper>
 );
