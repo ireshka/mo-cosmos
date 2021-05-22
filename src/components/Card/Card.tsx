@@ -9,8 +9,8 @@ export const Card: VFC<CardProps> = ({ data, setModal, setContent }) => {
   const [isHovered, setHovered] = useState(false);
   const { title, image } = data;
 
-  const handleHover = (): void => {
-    setHovered((previousState) => !previousState);
+  const handleHover = (hoverState: boolean): void => {
+    setHovered(hoverState);
   };
 
   const handleClick = () => {
@@ -21,11 +21,12 @@ export const Card: VFC<CardProps> = ({ data, setModal, setContent }) => {
   return (
     <AnimatePresence exitBeforeEnter>
       <S.Container
-        onMouseEnter={() => handleHover()}
-        onMouseLeave={() => handleHover()}
-        onFocus={() => handleHover()}
-        onBlur={() => handleHover()}
+        onMouseEnter={() => handleHover(true)}
+        onMouseLeave={() => handleHover(false)}
+        onFocus={() => handleHover(true)}
+        onBlur={() => handleHover(false)}
         onClick={() => handleClick()}
+        onTouchEnd={() => handleClick()}
         tabIndex={0}
       >
         <S.Image alt="" src={image} $hoverState={isHovered} />
