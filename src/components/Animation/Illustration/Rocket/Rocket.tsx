@@ -1,6 +1,7 @@
 import { VFC } from 'react';
 
-import RocketImage from '../../../../assets/rocket/rocket.svg';
+import RocketImage1 from '../../../../assets/rocket/rocket-@1.png';
+import RocketImage2 from '../../../../assets/rocket/rocket-@2.png';
 import { useAppStore } from '../../../../store/store';
 import * as S from './Rocket.styles';
 
@@ -11,7 +12,7 @@ export const Rocket: VFC = () => {
   return (
     <S.Image
       alt=""
-      src={RocketImage}
+      srcSet={`${RocketImage1} 1x, ${RocketImage2} 2x`}
       animate={isRocketAnimationInProgress ? 'hidden' : 'visible'}
       onAnimationComplete={(definition) => {
         setAnimationProgress(false);
