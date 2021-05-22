@@ -8,6 +8,7 @@
     "styled-components",
     "react"
   ],
+  "homepage": "https://ireshka.github.io/mo-cosmos",
   "repository": "https://github.com/ireshka/github-profile-viewer.git",
   "bugs": "https://github.com/ireshka/mo-cosmos/issues",
   "author": {
@@ -52,7 +53,9 @@
     "precommit": "lint-staged",
     "prettier": "prettier --write .",
     "start": "react-scripts start",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -90,6 +93,7 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-testing-library": "^4.4.0",
     "eslint-plugin-unicorn": "^32.0.1",
+    "gh-pages": "^3.1.0",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
     "prettier": "^2.3.0"

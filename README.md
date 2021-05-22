@@ -7,4 +7,5 @@ App created as a recruitment task. Written with React, Typescript and some addit
 - [simplebar](http://grsmto.github.io/simplebar/) for custom scrollbar
 - [framer-motion](https://www.framer.com/api/motion) for animation
 
-Data from [SpaceX Api](https://github.com/r-spacex/SpaceX-API). Hosting on Github Pages.
+Data from [SpaceX Api](https://github.com/r-spacex/SpaceX-API). Hosting on [Github Pages](https://ireshka.github.io/mo-cosmos).
+Project managed with [Github Projects](https://github.com/ireshka/mo-cosmos/projects/1).
