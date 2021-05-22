@@ -1,7 +1,7 @@
 import { cardsData } from '../../data/cards';
 import { Headers } from '../../data/cards.types';
 import { useAppStore } from '../../store/store';
-import { TableData } from './Table.types';
+import { CompletedChosenDataFromApi } from '../../store/store.types';
 
 type Header = {
   originalHeader: Headers;
@@ -9,10 +9,10 @@ type Header = {
 };
 type UseTableReturn = {
   tableHeaders: Header[];
-  tableContent: string[][];
+  tableContent: string[][] | null;
 };
 
-export const useTable = (data: TableData): UseTableReturn => {
+export const useTable = (data: CompletedChosenDataFromApi): UseTableReturn => {
   const [{ dataTypeOnModal }] = useAppStore();
   const shownCard = cardsData.find((card) => card.title === dataTypeOnModal);
   const tableHeaders = shownCard ? shownCard.headers : [];
@@ -25,18 +25,13 @@ export const useTable = (data: TableData): UseTableReturn => {
     };
   });
 
-  // todo: correct typing
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const dataForDisplay = data.map((element: any, index: number) => {
+  const dataForDisplay = data.map((element, index: number) => {
     const rowData = tableHeaders.map((header) => {
-      const value: string = element[header] ? element[header].toString() : 'unknown data';
+      const value = element[header] ? element[header] : 'unknown data';
       return value;
     });
-
     const rowId = element.id ? element.id.toString() : `row-${index}`;
-
     const fullRowData = [rowId, ...rowData];
-
     return fullRowData;
   });
 

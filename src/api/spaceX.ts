@@ -75,7 +75,15 @@ export const api = {
       const {
         data: { docs },
       } = response;
-      return docs;
+      const mappedDocuments = docs.map((starlink) => {
+        const { spaceTrack, ...rest } = starlink;
+        return {
+          ...spaceTrack,
+          ...rest,
+          spaceTrack: true,
+        };
+      });
+      return mappedDocuments;
     } catch (error) {
       return await getErrorObject(error);
     }
