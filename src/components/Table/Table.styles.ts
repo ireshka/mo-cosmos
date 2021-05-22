@@ -5,7 +5,7 @@ import styled from 'styled-components';
 export const Table = styled('div')`
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  height: 100%;
   position: relative;
   width: 100%;
 `;
@@ -20,7 +20,6 @@ export const HeaderRow = styled('div')`
   border-radius: ${({ theme }) => theme.radius.extraSmall};
   display: flex;
   width: 100%;
-  /* grid-template-columns: 1fr 1fr; */
 `;
 
 export const HeaderCell = styled('div')`
