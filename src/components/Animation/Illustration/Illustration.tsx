@@ -4,13 +4,13 @@ import PlanetImage from '../../../assets/rocket/planet.png';
 import * as S from './Illustration.styles';
 import { LandingGear } from './LandingGear/LandingGear';
 import { Rocket } from './Rocket/Rocket';
-import { SmokeContainer } from './SmokeContainer/SmokeContainer';
+import { SmokeWrapper } from './SmokeWrapper/SmokeWrapper';
 
 export const Illustration: VFC = () => (
-  <S.Container>
+  <S.Wrapper>
     <S.Image alt="Planet" src={PlanetImage} />
-    <SmokeContainer />
+    <SmokeWrapper />
     <LandingGear />
     <Rocket />
-  </S.Container>
+  </S.Wrapper>
 );

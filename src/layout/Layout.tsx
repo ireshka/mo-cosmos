@@ -7,5 +7,5 @@ type LayoutProps = {
 };
 
 export const Layout = ({ children }: LayoutProps): ReactElement | null => (
-  <S.Container>{children}</S.Container>
+  <S.Wrapper>{children}</S.Wrapper>
 );

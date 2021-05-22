@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled('div')`
+export const Wrapper = styled('div')`
   display: grid;
   gap: ${({ theme }) =>
     `${theme.dimension.layout.cardsGrid.rowGap} ${theme.dimension.layout.cardsGrid.columnGap}`};

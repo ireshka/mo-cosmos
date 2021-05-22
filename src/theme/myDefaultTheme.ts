@@ -63,7 +63,7 @@ const myDefaultTheme: DefaultTheme = {
   },
   dimension: {
     layout: {
-      container: {
+      wrapper: {
         maxWidth: '1126px',
       },
       cardsGrid: {

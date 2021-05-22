@@ -8,7 +8,7 @@ import {
   titleAnimationOptions,
 } from './Card.animation';
 
-export const Container = styled('div')`
+export const Wrapper = styled('div')`
   background-clip: content-box;
   border-radius: ${({ theme }) => theme.radius.medium};
   cursor: pointer;

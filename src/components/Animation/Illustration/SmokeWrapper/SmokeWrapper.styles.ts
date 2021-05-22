@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-export const Container = styled('div')`
+export const Wrapper = styled('div')`
   align-items: flex-end;
   display: flex;
   justify-content: space-between;

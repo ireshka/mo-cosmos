@@ -64,7 +64,7 @@ declare module 'styled-components' {
     };
     dimension: {
       layout: {
-        container: {
+        wrapper: {
           maxWidth: string;
         };
         cardsGrid: {

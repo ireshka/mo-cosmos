@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled('div')`
+export const Wrapper = styled('div')`
   display: flex;
   min-height: ${({ theme }) => theme.dimension.layout.footer.minHeight};
   padding: 2.25rem 0;
