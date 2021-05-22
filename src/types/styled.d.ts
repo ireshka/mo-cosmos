@@ -31,6 +31,12 @@ declare module 'styled-components' {
         firstColor: string;
         secondColor: string;
       };
+      dots: {
+        dotLeft: string;
+        dotTop: string;
+        dotBottom: string;
+        dotRight: string;
+      };
       gradients: {
         card: {
           partial: string;

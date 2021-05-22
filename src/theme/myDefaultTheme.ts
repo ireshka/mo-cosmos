@@ -30,6 +30,12 @@ const myDefaultTheme: DefaultTheme = {
       firstColor: '#AF69AE',
       secondColor: '#BAACDF',
     },
+    dots: {
+      dotLeft: '#E34A67',
+      dotTop: '#00C9B7',
+      dotBottom: '#7860D7',
+      dotRight: '#E34A67',
+    },
     gradients: {
       card: {
         partial: 'linear-gradient(360deg, #2B224A 0%, rgba(43, 34, 74, 0) 100%)',

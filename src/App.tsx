@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import { Animation } from './components/Animation/Animation';
+import { Background } from './components/Background/Background';
 import { CardsGrid } from './components/CardsGrid/CardsGrid';
 import { Content } from './components/Content/Content';
 import { Footer } from './components/Footer/Footer';
@@ -13,6 +14,7 @@ import { myDefaultTheme } from './theme/myDefaultTheme';
 export const App: FC = () => (
   <ThemeProvider theme={myDefaultTheme}>
     <GlobalStyle />
+    <Background />
     <Layout>
       <Header />
       <Content>
