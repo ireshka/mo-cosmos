@@ -16,8 +16,10 @@ const myDefaultTheme: DefaultTheme = {
       background: '#2B224A',
       closeIcon: '#C3B8E8',
       title: '#FFFFFF',
-      columnHeader: '#A094C6',
-      columnElements: '#D2CBE9',
+      tableHeader: '#A094C6',
+      tableElements: '#D2CBE9',
+      tableHeaderBackground: '#342A56',
+      tableHeaderHoverBackground: '#251D42',
     },
     scrollbar: {
       main: '#53477D',
@@ -64,7 +66,7 @@ const myDefaultTheme: DefaultTheme = {
   dimension: {
     layout: {
       wrapper: {
-        maxWidth: '1126px',
+        maxWidth: '1172px',
       },
       cardsGrid: {
         maxWidth: '21.875rem',

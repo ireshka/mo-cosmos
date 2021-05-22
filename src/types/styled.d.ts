@@ -17,8 +17,10 @@ declare module 'styled-components' {
         background: string;
         closeIcon: string;
         title: string;
-        columnHeader: string;
-        columnElements: string;
+        tableHeader: string;
+        tableElements: string;
+        tableHeaderBackground: string;
+        tableHeaderHoverBackground: string;
       };
       scrollbar: {
         main: string;

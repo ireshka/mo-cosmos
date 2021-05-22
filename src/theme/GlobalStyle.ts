@@ -25,4 +25,8 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
   }
+
+  .simplebar-scrollbar::before {
+    background-color: ${({ theme }) => theme.colors.scrollbar.main};
+  }
 `;

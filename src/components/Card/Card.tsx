@@ -2,10 +2,13 @@ import { AnimatePresence } from 'framer-motion';
 import { useState, VFC } from 'react';
 
 import { texts } from '../../data/texts';
+import { useAppStore } from '../../store/store';
 import * as S from './Card.styles';
 import { CardProps } from './Card.types';
 
 export const Card: VFC<CardProps> = ({ data, setModal, setContent }) => {
+  const [, { setDataTypeOnModal }] = useAppStore();
+
   const [isHovered, setHovered] = useState(false);
   const { title, image } = data;
 
@@ -16,6 +19,7 @@ export const Card: VFC<CardProps> = ({ data, setModal, setContent }) => {
   const handleClick = () => {
     setModal(true);
     setContent(data);
+    setDataTypeOnModal(title);
   };
 
   return (
