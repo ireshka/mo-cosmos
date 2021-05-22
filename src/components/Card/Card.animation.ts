@@ -31,14 +31,13 @@ const overlayAnimationVariants: Variants = {
     y: '0%',
     transition: {
       duration: overlayAnimationDuration,
-      when: 'beforeChildren',
     },
   },
   hidden: {
     y: '103%',
     transition: {
       duration: overlayAnimationDuration,
-      when: 'afterChildren',
+      delay: overlayTextAnimationDuration,
     },
   },
 };
@@ -53,6 +52,7 @@ const overlayTextAnimationVariants: Variants = {
     opacity: 1,
     transition: {
       duration: overlayTextAnimationDuration,
+      delay: overlayAnimationDuration,
     },
   },
   hidden: {

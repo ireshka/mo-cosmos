@@ -7,6 +7,7 @@ const myDefaultTheme: DefaultTheme = {
     button: {
       basic: '#7860D7',
       active: '#05C9B7',
+      disabled: '#544E69',
     },
     footer: {
       text: '#8D7FBC',
@@ -84,6 +85,11 @@ const myDefaultTheme: DefaultTheme = {
       maxWidth: '540px',
       height: '360px',
       width: '90%;',
+    },
+    animation: {
+      planet: {
+        maxWidth: '375px',
+      },
     },
   },
   media: {

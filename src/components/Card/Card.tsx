@@ -9,12 +9,8 @@ export const Card: VFC<CardProps> = ({ data, setModal, setContent }) => {
   const [isHovered, setHovered] = useState(false);
   const { title, image } = data;
 
-  const handleHover = (hoverState: boolean): void => {
-    if (hoverState) {
-      setHovered(hoverState);
-    } else {
-      setHovered(hoverState);
-    }
+  const handleHover = (): void => {
+    setHovered((previousState) => !previousState);
   };
 
   const handleClick = () => {
@@ -23,12 +19,12 @@ export const Card: VFC<CardProps> = ({ data, setModal, setContent }) => {
   };
 
   return (
-    <AnimatePresence>
+    <AnimatePresence exitBeforeEnter>
       <S.Container
-        onMouseEnter={() => handleHover(true)}
-        onMouseLeave={() => handleHover(false)}
-        onFocus={() => handleHover(true)}
-        onBlur={() => handleHover(false)}
+        onMouseEnter={() => handleHover()}
+        onMouseLeave={() => handleHover()}
+        onFocus={() => handleHover()}
+        onBlur={() => handleHover()}
         onClick={() => handleClick()}
         tabIndex={0}
       >
@@ -41,7 +37,9 @@ export const Card: VFC<CardProps> = ({ data, setModal, setContent }) => {
         <S.Title animate={isHovered ? 'hidden' : 'visible'}>{title}</S.Title>
 
         <S.DetailsOverlay animate={isHovered ? 'visible' : 'hidden'}>
-          <S.OverlayText>{texts.card.overlayText}</S.OverlayText>
+          <S.OverlayText animate={isHovered ? 'visible' : 'hidden'}>
+            {texts.card.overlayText}
+          </S.OverlayText>
         </S.DetailsOverlay>
       </S.Container>
     </AnimatePresence>

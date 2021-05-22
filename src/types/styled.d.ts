@@ -8,6 +8,7 @@ declare module 'styled-components' {
       button: {
         basic: string;
         active: string;
+        disabled: string;
       };
       footer: {
         text: string;
@@ -85,6 +86,11 @@ declare module 'styled-components' {
         maxWidth: string;
         height: string;
         width: string;
+      };
+      animation: {
+        planet: {
+          maxWidth: string;
+        };
       };
     };
     media: {
