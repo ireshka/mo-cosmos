@@ -1,18 +1,20 @@
 import styled from 'styled-components';
 
-export const Table = styled('table')`
+// change semantic table tags for 'div' because I didn't find any
+// custom scrollbar that works with table, sorry accessibility :(
+export const Table = styled('div')`
   display: flex;
   flex-direction: column;
   overflow: hidden;
   width: 100%;
 `;
 
-export const Header = styled('thead')`
+export const Header = styled('div')`
   border: none;
   border-radius: ${({ theme }) => theme.radius.extraSmall};
 `;
 
-export const HeaderRow = styled('tr')`
+export const HeaderRow = styled('div')`
   background-color: ${({ theme }) => theme.colors.modal.tableHeaderBackground};
   border-radius: ${({ theme }) => theme.radius.extraSmall};
   display: flex;
@@ -20,7 +22,7 @@ export const HeaderRow = styled('tr')`
   /* grid-template-columns: 1fr 1fr; */
 `;
 
-export const HeaderCell = styled('td')`
+export const HeaderCell = styled('div')`
   border-radius: ${({ theme }) => theme.radius.extraSmall};
   flex-basis: 100%;
   font-size: ${({ theme }) => theme.typography.fontSize.small};
@@ -35,7 +37,7 @@ export const HeaderCell = styled('td')`
   }
 `;
 
-export const TableBody = styled('tbody')`
+export const TableBody = styled('div')`
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -43,11 +45,11 @@ export const TableBody = styled('tbody')`
   overflow: auto;
 `;
 
-export const BodyRow = styled('tr')`
+export const BodyRow = styled('div')`
   display: flex;
 `;
 
-export const BodyCell = styled('td')`
+export const BodyCell = styled('div')`
   color: ${({ theme }) => theme.colors.modal.tableElements};
   flex-basis: 100%;
   font-size: ${({ theme }) => theme.typography.fontSize.small};

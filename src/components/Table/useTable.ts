@@ -27,13 +27,17 @@ export const useTable = (data: TableData): UseTableReturn => {
 
   // todo: correct typing
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const dataForDisplay = data.map((element: any) => {
+  const dataForDisplay = data.map((element: any, index: number) => {
     const rowData = tableHeaders.map((header) => {
       const value: string = element[header] ? element[header].toString() : 'unknown data';
       return value;
     });
 
-    return rowData;
+    const rowId = element.id ? element.id.toString() : `row-${index}`;
+
+    const fullRowData = [rowId, ...rowData];
+
+    return fullRowData;
   });
 
   return {
