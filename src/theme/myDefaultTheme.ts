@@ -26,6 +26,10 @@ const myDefaultTheme: DefaultTheme = {
       main: '#53477D',
       background: '#221A3C',
     },
+    spinner: {
+      firstColor: '#AF69AE',
+      secondColor: '#BAACDF',
+    },
     gradients: {
       card: {
         partial: 'linear-gradient(360deg, #2B224A 0%, rgba(43, 34, 74, 0) 100%)',

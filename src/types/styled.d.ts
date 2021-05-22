@@ -27,6 +27,10 @@ declare module 'styled-components' {
         main: string;
         background: string;
       };
+      spinner: {
+        firstColor: string;
+        secondColor: string;
+      };
       gradients: {
         card: {
           partial: string;
