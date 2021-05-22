@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.js": "/mo-cosmos/static/js/main.9822e130.chunk.js",
+    "main.js.map": "/mo-cosmos/static/js/main.9822e130.chunk.js.map",
+    "runtime-main.js": "/mo-cosmos/static/js/runtime-main.ef21d84d.js",
+    "runtime-main.js.map": "/mo-cosmos/static/js/runtime-main.ef21d84d.js.map",
+    "static/css/2.fe61e19b.chunk.css": "/mo-cosmos/static/css/2.fe61e19b.chunk.css",
+    "static/js/2.f52069b5.chunk.js": "/mo-cosmos/static/js/2.f52069b5.chunk.js",
+    "static/js/2.f52069b5.chunk.js.map": "/mo-cosmos/static/js/2.f52069b5.chunk.js.map",
+    "index.html": "/mo-cosmos/index.html",
+    "static/css/2.fe61e19b.chunk.css.map": "/mo-cosmos/static/css/2.fe61e19b.chunk.css.map",
+    "static/js/2.f52069b5.chunk.js.LICENSE.txt": "/mo-cosmos/static/js/2.f52069b5.chunk.js.LICENSE.txt",
+    "static/media/capsule.c7f26e34.jpg": "/mo-cosmos/static/media/capsule.c7f26e34.jpg",
+    "static/media/circle.f32f1566.svg": "/mo-cosmos/static/media/circle.f32f1566.svg",
+    "static/media/close.06d3b8d1.svg": "/mo-cosmos/static/media/close.06d3b8d1.svg",
+    "static/media/crew.ab782f6a.jpg": "/mo-cosmos/static/media/crew.ab782f6a.jpg",
+    "static/media/landing-gear.1f3e6da7.svg": "/mo-cosmos/static/media/landing-gear.1f3e6da7.svg",
+    "static/media/logo.d135bb48.svg": "/mo-cosmos/static/media/logo.d135bb48.svg",
+    "static/media/planet.59265a98.png": "/mo-cosmos/static/media/planet.59265a98.png",
+    "static/media/rocket-@2.d156904f.png": "/mo-cosmos/static/media/rocket-@2.d156904f.png",
+    "static/media/rocket.8d4580ef.jpg": "/mo-cosmos/static/media/rocket.8d4580ef.jpg",
+    "static/media/smoke-left.504b6526.svg": "/mo-cosmos/static/media/smoke-left.504b6526.svg",
+    "static/media/smoke-right.40147cfb.svg": "/mo-cosmos/static/media/smoke-right.40147cfb.svg",
+    "static/media/starlink.8309bfe3.jpg": "/mo-cosmos/static/media/starlink.8309bfe3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ef21d84d.js",
+    "static/css/2.fe61e19b.chunk.css",
+    "static/js/2.f52069b5.chunk.js",
+    "static/js/main.9822e130.chunk.js"
+  ]
+}
