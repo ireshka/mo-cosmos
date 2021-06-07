@@ -1,3 +1,26 @@
+/**
+ * Utils api types
+ */
+export type ErrorRequestResponse = {
+  errorStatus: number;
+};
+
+export type PayloadObject = {
+  options: {
+    limit: number;
+  };
+};
+
+export type UserQueryOptionsObject = {
+  resultLimit?: number;
+};
+
+export type QueryOptionsObject = Required<UserQueryOptionsObject>;
+
+/**
+ * API responses types
+ */
+
 export type DragonType = 'unknown' | 'active' | 'retired' | 'destroyed';
 export type CrewStatus = 'active' | 'inactive' | 'retired' | 'unknown';
 
@@ -214,10 +237,6 @@ export type SpaceXStarlinkOriginal = {
 
 export type SpaceXStarlink = Omit<SpaceXStarlinkOriginal, 'spaceTrack'> &
   SpaceTrack & { spaceTrack: boolean };
-
-export type ErrorRequestResponse = {
-  errorStatus: number;
-};
 
 export type SpaceXStarlinkQuery = {
   docs: SpaceXStarlinkOriginal[];
