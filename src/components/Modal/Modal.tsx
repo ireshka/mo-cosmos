@@ -3,7 +3,7 @@ import { ReactElement, useEffect, useState } from 'react';
 import { RenderModalBackdropProps } from 'react-overlays/Modal';
 
 import { api } from '../../api/spaceX';
-import { texts } from '../../data/texts';
+import { texts } from '../../constants/texts';
 import { useAppStore } from '../../store/store';
 import { Spinner } from '../Spinner/Spinner';
 import { Table } from '../Table/Table';

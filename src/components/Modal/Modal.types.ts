@@ -1,4 +1,4 @@
-import { Card } from '../../data/cards.types';
+import { Card } from '../../constants/cards.types';
 
 export type ModalProps = {
   show: boolean;

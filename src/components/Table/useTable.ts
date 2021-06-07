@@ -1,5 +1,5 @@
-import { cardsData } from '../../data/cards';
-import { Headers } from '../../data/cards.types';
+import { cardsData } from '../../constants/cards';
+import { Headers } from '../../constants/cards.types';
 import { useAppStore } from '../../store/store';
 import { CompletedChosenDataFromApi } from '../../store/store.types';
 

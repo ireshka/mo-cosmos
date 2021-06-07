@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction } from 'react';
 
-import { Card } from '../../data/cards.types';
+import { Card } from '../../constants/cards.types';
 
 export type CardProps = {
   data: Card;

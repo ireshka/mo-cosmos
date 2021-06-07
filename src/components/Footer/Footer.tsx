@@ -1,6 +1,6 @@
 import { VFC } from 'react';
 
-import { texts } from '../../data/texts';
+import { texts } from '../../constants/texts';
 import * as S from './Footer.styles';
 
 export const Footer: VFC = () => (

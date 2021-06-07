@@ -1,6 +1,6 @@
 import { VFC } from 'react';
 
-import { texts } from '../../data/texts';
+import { texts } from '../../constants/texts';
 import { useAppStore } from '../../store/store';
 import * as S from './Animation.styles';
 import { Illustration } from './Illustration/Illustration';

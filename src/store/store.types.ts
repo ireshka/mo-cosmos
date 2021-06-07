@@ -1,4 +1,4 @@
-import { CardsID } from '../data/cards.types';
+import { CardsID } from '../constants/cards.types';
 
 export type CompletedChosenDataFromApi = Record<string, string>[];
 export type ChosenDataFromApi = CompletedChosenDataFromApi | null;

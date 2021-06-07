@@ -1,7 +1,7 @@
 import { FC, useState } from 'react';
 
-import { cardsData } from '../../data/cards';
-import { Card as CardType } from '../../data/cards.types';
+import { cardsData } from '../../constants/cards';
+import { Card as CardType } from '../../constants/cards.types';
 import { useAppStore } from '../../store/store';
 import { Card } from '../Card/Card';
 import { Modal } from '../Modal/Modal';

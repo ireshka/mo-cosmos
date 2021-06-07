@@ -1,7 +1,7 @@
 import { AnimatePresence } from 'framer-motion';
 import { useState, VFC } from 'react';
 
-import { texts } from '../../data/texts';
+import { texts } from '../../constants/texts';
 import { useAppStore } from '../../store/store';
 import * as S from './Card.styles';
 import { CardProps } from './Card.types';
