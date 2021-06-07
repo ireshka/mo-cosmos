@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/mo-cosmos/static/js/main.a2b45d8b.chunk.js",
-    "main.js.map": "/mo-cosmos/static/js/main.a2b45d8b.chunk.js.map",
+    "main.js": "/mo-cosmos/static/js/main.e935536a.chunk.js",
+    "main.js.map": "/mo-cosmos/static/js/main.e935536a.chunk.js.map",
     "runtime-main.js": "/mo-cosmos/static/js/runtime-main.ef21d84d.js",
     "runtime-main.js.map": "/mo-cosmos/static/js/runtime-main.ef21d84d.js.map",
     "static/css/2.fe61e19b.chunk.css": "/mo-cosmos/static/css/2.fe61e19b.chunk.css",
@@ -27,6 +27,6 @@
     "static/js/runtime-main.ef21d84d.js",
     "static/css/2.fe61e19b.chunk.css",
     "static/js/2.f52069b5.chunk.js",
-    "static/js/main.a2b45d8b.chunk.js"
+    "static/js/main.e935536a.chunk.js"
   ]
 }
