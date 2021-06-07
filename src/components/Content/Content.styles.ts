@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled('div')`
+export const Wrapper = styled('main')`
   align-items: center;
   display: grid;
   grid-row-gap: 50px;

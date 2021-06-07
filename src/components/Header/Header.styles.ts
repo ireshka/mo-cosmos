@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { screenReadersOnly } from '../../theme/cssHelpers';
 
-export const Wrapper = styled('div')`
+export const Wrapper = styled('header')`
   display: flex;
   min-height: ${({ theme }) => theme.dimension.layout.footer.minHeight};
   padding: 2.25rem 1rem;

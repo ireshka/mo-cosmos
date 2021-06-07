@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { screenReadersOnly } from '../../theme/cssHelpers';
 
-export const Wrapper = styled('div')`
+export const List = styled('ul')`
   display: grid;
   gap: ${({ theme }) =>
     `${theme.dimension.layout.cardsGrid.rowGap} ${theme.dimension.layout.cardsGrid.columnGap}`};

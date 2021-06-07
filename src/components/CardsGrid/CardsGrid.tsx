@@ -19,13 +19,21 @@ export const CardsGrid: FC = () => {
 
   return (
     <>
-      <S.Wrapper>
+      <article>
         <S.ListHeader>Available data</S.ListHeader>
-        {cardsData.map((data) => (
-          <Card key={data.id} data={data} setModal={setModalShow} setContent={setModalContent} />
-        ))}
-      </S.Wrapper>
-      <Modal show={isModalShow} data={modalContent} onHide={hideModal} />
+        <S.List>
+          {cardsData.map((data) => (
+            <Card
+              key={data.id}
+              data={data}
+              setModal={setModalShow}
+              setContent={setModalContent}
+              cardTagName="li"
+            />
+          ))}
+        </S.List>
+        <Modal show={isModalShow} data={modalContent} onHide={hideModal} />
+      </article>
     </>
   );
 };

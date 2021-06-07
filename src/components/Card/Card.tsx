@@ -6,7 +6,7 @@ import { useAppStore } from '../../store/store';
 import * as S from './Card.styles';
 import { CardProps } from './Card.types';
 
-export const Card: VFC<CardProps> = ({ data, setModal, setContent }) => {
+export const Card: VFC<CardProps> = ({ data, setModal, setContent, cardTagName = 'div' }) => {
   const [, { setDataTypeOnModal, setChosenDataFromApi }] = useAppStore();
 
   const [isHovered, setHovered] = useState(false);
@@ -33,6 +33,7 @@ export const Card: VFC<CardProps> = ({ data, setModal, setContent }) => {
         onClick={() => handleClick()}
         onTouchEnd={() => handleClick()}
         tabIndex={0}
+        as={cardTagName}
       >
         <S.Image alt="" src={image} $hoverState={isHovered} />
         {!isHovered && (

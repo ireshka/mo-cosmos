@@ -16,6 +16,7 @@ export const Animation: VFC = () => {
 
   return (
     <S.Wrapper>
+      <S.ListHeader>Rocket animation</S.ListHeader>
       <Illustration />
       <LaunchButton
         text={texts.button.launch}
