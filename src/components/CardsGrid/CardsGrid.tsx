@@ -1,7 +1,7 @@
 import { FC, useState } from 'react';
 
-import { cardsData } from '../../data/cards';
-import { Card as CardType } from '../../data/cards.types';
+import { cardsData } from '../../constants/cards';
+import { Card as CardType } from '../../constants/cards.types';
 import { useAppStore } from '../../store/store';
 import { Card } from '../Card/Card';
 import { Modal } from '../Modal/Modal';
@@ -19,13 +19,21 @@ export const CardsGrid: FC = () => {
 
   return (
     <>
-      <S.Wrapper>
+      <article>
         <S.ListHeader>Available data</S.ListHeader>
-        {cardsData.map((data) => (
-          <Card key={data.id} data={data} setModal={setModalShow} setContent={setModalContent} />
-        ))}
-      </S.Wrapper>
-      <Modal show={isModalShow} data={modalContent} onHide={hideModal} />
+        <S.List>
+          {cardsData.map((data) => (
+            <Card
+              key={data.id}
+              data={data}
+              setModal={setModalShow}
+              setContent={setModalContent}
+              cardTagName="li"
+            />
+          ))}
+        </S.List>
+        <Modal show={isModalShow} data={modalContent} onHide={hideModal} />
+      </article>
     </>
   );
 };

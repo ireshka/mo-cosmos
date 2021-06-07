@@ -24,7 +24,7 @@
         "jsx": "react-jsx",
         "typeRoots": [
             "node_modules/@types",
-            "type-definitions"
+            "src/type-definitions"
         ]
     }
 }

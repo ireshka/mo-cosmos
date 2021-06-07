@@ -21,7 +21,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
-  p, div, h1, h2, h3 {
+  p, div, h1, h2, h3, header, footer, main, ul, ol, li {
     padding: 0;
     margin: 0;
   }

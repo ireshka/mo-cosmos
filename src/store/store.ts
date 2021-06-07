@@ -4,10 +4,10 @@ import produce, { Draft } from 'immer';
 import { Action, createHook, createStore, defaults } from 'react-sweet-state';
 
 import { ErrorRequestResponse, SpaceXTypes } from '../api/spaceX.types';
-import { cardsData } from '../data/cards';
-import { CardsID } from '../data/cards.types';
-import { errorMessages } from '../data/errorMessages';
-import { isDefined } from '../utils/utils';
+import { cardsData } from '../constants/cards';
+import { CardsID } from '../constants/cards.types';
+import { errorMessages } from '../constants/errorMessages';
+import { isDefined } from '../utils';
 import { State } from './store.types';
 
 defaults.devtools = true;

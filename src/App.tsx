@@ -8,11 +8,11 @@ import { Content } from './components/Content/Content';
 import { Footer } from './components/Footer/Footer';
 import { Header } from './components/Header/Header';
 import { Layout } from './layout/Layout';
+import { defaultTheme } from './theme/defaultTheme';
 import { GlobalStyle } from './theme/GlobalStyle';
-import { myDefaultTheme } from './theme/myDefaultTheme';
 
 export const App: FC = () => (
-  <ThemeProvider theme={myDefaultTheme}>
+  <ThemeProvider theme={defaultTheme}>
     <GlobalStyle />
     <Background />
     <Layout>

@@ -1,6 +1,6 @@
 import { DefaultTheme } from 'styled-components';
 
-const myDefaultTheme: DefaultTheme = {
+const defaultTheme: DefaultTheme = {
   colors: {
     white: '#FFFFFF',
     pageBackground: '#221B3A',
@@ -115,4 +115,4 @@ const myDefaultTheme: DefaultTheme = {
   },
 };
 
-export { myDefaultTheme };
+export { defaultTheme };

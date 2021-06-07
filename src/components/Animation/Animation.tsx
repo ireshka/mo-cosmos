@@ -1,6 +1,6 @@
 import { VFC } from 'react';
 
-import { texts } from '../../data/texts';
+import { texts } from '../../constants/texts';
 import { useAppStore } from '../../store/store';
 import * as S from './Animation.styles';
 import { Illustration } from './Illustration/Illustration';
@@ -16,6 +16,7 @@ export const Animation: VFC = () => {
 
   return (
     <S.Wrapper>
+      <S.ListHeader>Rocket animation</S.ListHeader>
       <Illustration />
       <LaunchButton
         text={texts.button.launch}
