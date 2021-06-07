@@ -3,14 +3,19 @@ import axios from 'axios';
 import { instance } from './spaceX.instance';
 import {
   ErrorRequestResponse,
+  PayloadObject,
+  QueryOptionsObject,
   SpaceXCapsules,
   SpaceXCrew,
   SpaceXRockets,
   SpaceXStarlink,
   SpaceXStarlinkQuery,
+  UserQueryOptionsObject,
 } from './spaceX.types';
 
-const DEFAULT_RESULT_API_LIMIT = 100;
+const defaultQueryOptionsObject: QueryOptionsObject = {
+  resultLimit: 100,
+};
 
 const endpoints = {
   capsules: 'capsules',
@@ -19,8 +24,7 @@ const endpoints = {
   starlink: 'starlink',
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const getErrorObject = async (error: any): Promise<ErrorRequestResponse> => {
+const getErrorObject = (error: unknown): ErrorRequestResponse => {
   if (axios.isAxiosError(error)) {
     if (error.response) {
       const { status }: { status: number } = error.response;
@@ -31,11 +35,18 @@ const getErrorObject = async (error: any): Promise<ErrorRequestResponse> => {
   return { errorStatus: 500 };
 };
 
-const getStarlinkResultLimit = (resultLimit: number) => ({
-  options: {
-    limit: resultLimit,
-  },
-});
+const getPayloadObject = (userQueryOptionsObject: UserQueryOptionsObject): PayloadObject => {
+  const fullQueryOptionsObject = {
+    ...defaultQueryOptionsObject,
+    ...userQueryOptionsObject,
+  };
+  const { resultLimit } = fullQueryOptionsObject;
+  return {
+    options: {
+      limit: resultLimit,
+    },
+  };
+};
 
 export const api = {
   async getCapsules(): Promise<SpaceXCapsules[] | ErrorRequestResponse> {
@@ -44,7 +55,7 @@ export const api = {
       const { data } = response;
       return data;
     } catch (error) {
-      return await getErrorObject(error);
+      return getErrorObject(error);
     }
   },
   async getCrew(): Promise<SpaceXCrew[] | ErrorRequestResponse> {
@@ -53,7 +64,7 @@ export const api = {
       const { data } = response;
       return data;
     } catch (error) {
-      return await getErrorObject(error);
+      return getErrorObject(error);
     }
   },
   async getRockets(): Promise<SpaceXRockets[] | ErrorRequestResponse> {
@@ -62,14 +73,14 @@ export const api = {
       const { data } = response;
       return data;
     } catch (error) {
-      return await getErrorObject(error);
+      return getErrorObject(error);
     }
   },
   async getStarlink(
-    resultLimit = DEFAULT_RESULT_API_LIMIT,
+    userQueryOptionsObject: UserQueryOptionsObject = {},
   ): Promise<SpaceXStarlink[] | ErrorRequestResponse> {
     try {
-      const payload = getStarlinkResultLimit(resultLimit);
+      const payload = getPayloadObject(userQueryOptionsObject);
       const endpoint = `${endpoints.starlink}/query`;
       const response = await instance.post<SpaceXStarlinkQuery>(endpoint, payload);
       const {
@@ -85,7 +96,7 @@ export const api = {
       });
       return mappedDocuments;
     } catch (error) {
-      return await getErrorObject(error);
+      return getErrorObject(error);
     }
   },
 };
