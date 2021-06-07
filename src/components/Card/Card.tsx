@@ -7,7 +7,7 @@ import * as S from './Card.styles';
 import { CardProps } from './Card.types';
 
 export const Card: VFC<CardProps> = ({ data, setModal, setContent, cardTagName = 'div' }) => {
-  const [, { setDataTypeOnModal, setChosenDataFromApi }] = useAppStore();
+  const [, { setDataTypeOnModal }] = useAppStore();
 
   const [isHovered, setHovered] = useState(false);
   const { title, image } = data;
@@ -17,7 +17,6 @@ export const Card: VFC<CardProps> = ({ data, setModal, setContent, cardTagName =
   };
 
   const handleClick = () => {
-    setChosenDataFromApi(null);
     setModal(true);
     setContent(data);
     setDataTypeOnModal(title);

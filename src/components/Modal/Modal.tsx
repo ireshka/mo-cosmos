@@ -57,8 +57,10 @@ export const Modal = ({ show, onHide }: ModalProps): ReactElement | null => {
           <CloseIcon closeHandler={onHide} />
         </S.Header>
         <S.Content>
-          {isFetching && !chosenDataFromApi && <Spinner />}
-          {!isFetching && chosenDataFromApi !== null && <Table data={chosenDataFromApi} />}
+          {isFetching && <Spinner />}
+          {!isFetching && chosenDataFromApi !== null && !errorMessage && (
+            <Table data={chosenDataFromApi} />
+          )}
           {errorMessage && <ErrorBox text={errorMessage} />}
         </S.Content>
       </>
